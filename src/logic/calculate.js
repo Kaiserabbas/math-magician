@@ -1,7 +1,7 @@
-import operate from './operate.js';
+import operate from './operate';
 
 function isNumber(item) {
-  return !!item.match(/[0-9]+/);
+  return typeof item === 'string' && item.match(/[0-9]+/);
 }
 
 /**
