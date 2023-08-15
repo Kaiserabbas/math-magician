@@ -5,15 +5,11 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const [calculatorData, setCalculatorData] = useState({});
   const handleButtonClick = (buttonName) => {
-    console.log('Button clicked:', buttonName); // Add this line
-    if (buttonName === '=') {
-      const result = calculate(calculatorData, '=');
-      setCalculatorData(result);
-    } else {
-      const newData = calculate(calculatorData, buttonName);
-      console.log('New data:', newData);
-      setCalculatorData(newData);
-    }
+    console.log('Button clicked:', buttonName);
+
+    const newData = calculate(calculatorData, buttonName);
+    console.log('New data:', newData);
+    setCalculatorData(newData);
   };
 
   const renderButton = (label, ClassName) => {
@@ -31,8 +27,9 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="display">
-        {' '}
-        {calculatorData.total || calculatorData.next || '0'}
+        {calculatorData.next !== null
+          ? calculatorData.next
+          : calculatorData.total || '0'}
       </div>
       <div className="buttons">
         <div className="row1 row">
