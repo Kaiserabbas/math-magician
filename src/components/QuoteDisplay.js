@@ -33,7 +33,7 @@ const QuoteDisplay = () => {
   }, [fetchQuote]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className="quote">Loading...</p>;
   }
 
   if (error) {
