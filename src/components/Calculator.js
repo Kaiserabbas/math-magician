@@ -1,77 +1,68 @@
-import React from 'react';
-import './Calculator.css'; // Import the CSS for styling
+import React, { useState } from 'react';
+import './Calculator.css';
+import calculate from '../logic/calculate';
 
 const Calculator = () => {
+  const [calculatorData, setCalculatorData] = useState({});
+  const handleButtonClick = (buttonName) => {
+    console.log('Button clicked:', buttonName); // Add this line
+    if (buttonName === '=') {
+      const result = calculate(calculatorData, '=');
+      setCalculatorData(result);
+    } else {
+      const newData = calculate(calculatorData, buttonName);
+      console.log('New data:', newData);
+      setCalculatorData(newData);
+    }
+  };
+
+  const renderButton = (label, ClassName) => {
+    return (
+      <button
+        type="button"
+        className={ClassName}
+        onClick={() => handleButtonClick(label)}
+      >
+        {label}
+      </button>
+    );
+  };
+
   return (
     <div className="calculator">
-      <div className="display">0</div>
+      <div className="display">
+        {' '}
+        {calculatorData.total || calculatorData.next || '0'}
+      </div>
       <div className="buttons">
         <div className="row1 row">
-          <button type="button" className="button">
-            AC
-          </button>
-          <button type="button" className="button">
-            +/-
-          </button>
-          <button type="button" className="button">
-            %
-          </button>
-          <button type="button" className="button operator">
-            /
-          </button>
+          {renderButton('AC', 'button')}
+          {renderButton('+/-', 'button')}
+          {renderButton('%', 'button')}
+          {renderButton('÷', ' button operator')}
         </div>
         <div className="row2 row">
-          <button type="button" className="button">
-            7
-          </button>
-          <button type="button" className="button">
-            8
-          </button>
-          <button type="button" className="button">
-            9
-          </button>
-          <button type="button" className="button operator">
-            x
-          </button>
+          {renderButton('7', 'button')}
+          {renderButton('8', 'button')}
+          {renderButton('9', 'button')}
+          {renderButton('x', 'button operator')}
         </div>
         <div className="row3 row">
-          <button type="button" className="button">
-            4
-          </button>
-          <button type="button" className="button">
-            5
-          </button>
-          <button type="button" className="button">
-            6
-          </button>
-          <button type="button" className="button operator">
-            -
-          </button>
+          {renderButton('4', 'button')}
+          {renderButton('5', 'button')}
+          {renderButton('6', 'button')}
+          {renderButton('-', 'button operator')}
         </div>
         <div className="row4 row">
-          <button type="button" className="button">
-            1
-          </button>
-          <button type="button" className="button">
-            2
-          </button>
-          <button type="button" className="button">
-            3
-          </button>
-          <button type="button" className="button operator">
-            +
-          </button>
+          {renderButton('1', 'button')}
+          {renderButton('2', 'button')}
+          {renderButton('3', 'button')}
+          {renderButton('+', 'button operator')}
         </div>
         <div className="row5 row">
-          <button type="button" className="button">
-            0
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button operator">
-            =
-          </button>
+          {renderButton('0', 'button')}
+          {renderButton('.', 'button')}
+          {renderButton('=', 'button operator')}
         </div>
       </div>
     </div>
