@@ -3,7 +3,7 @@
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 100px auto 0 auto;
   padding: 20px;
 }
@@ -22,18 +22,18 @@
 .buttons {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
+  grid-gap: 10px;
 }
 
 .button {
   width: 100%;
   padding: 10px;
-    border-radius: 6px;
+  border-radius: 6px;
   font-size: 14px;
   border: 1px solid #ccc;
   background-color: #e0e0e0;
   cursor: pointer;
-    transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .row {
@@ -67,4 +67,5 @@
   font-style: italic;
   font-size: 18px;
   text-align: center;
-  margin: 20px auto;}
+  margin: 20px auto;
+}
