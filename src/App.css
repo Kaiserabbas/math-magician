@@ -1,0 +1,191 @@
+/* Nav-Bar */
+.nav-list {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  gap: 20px;
+  padding: 20px;
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  color: black;
+  margin: 40px 100px 0 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.nav:active {
+  color: blue;
+}
+
+.nav::after {
+  content: "|";
+  margin: 0 10px;
+}
+
+.nav:last-child::after {
+  content: none;
+}
+
+/* Nav-Bar */
+
+/* Home Page */
+.home {
+  margin: 30px;
+  font-family: poppins, sans-serif;
+}
+
+.home h1 {
+  font-size: 3rem;
+}
+
+/* Home Page */
+
+/* Calculator */
+
+.calculator-container {
+  display: flex;
+}
+
+.calculator-text {
+  margin: 0 0 0 30px;
+  font-family: poppins, sans-serif;
+}
+
+.calculator-text h1 {
+  font-size: 3rem;
+}
+
+.calculator-text h2 {
+  font-size: 1.5rem;
+}
+
+.calculator {
+  width: 500px;
+  height: auto;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 50px auto 0 auto;
+  padding: 20px;
+}
+
+.display {
+  height: 60px;
+  background-color: #222;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.button {
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+.operator {
+  background-color: #f49313dd;
+  color: white;
+  font-weight: bold;
+}
+
+.row5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.row5 :first-child {
+  grid-column: span 2;
+}
+
+/* Calculator */
+
+/* Quote */
+
+.quote-container h1 {
+  margin: 30px 0 0 30px;
+  font-family: poppins, sans-serif;
+  font-size: 3rem;
+}
+
+.quote {
+  color: #000;
+  position: relative;
+  width: auto;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 50px 150px;
+}
+
+/* Quote */
+
+@media screen and (max-width: 768px) {
+  .home {
+    text-align: center;
+  }
+
+  .nav-list {
+    justify-content: center;
+    margin: 40px 0 0 0;
+  }
+
+  .calculator-container {
+    flex-direction: column;
+  }
+
+  .calculator {
+    width: 300px;
+  }
+
+  .calculator-text {
+    text-align: center;
+  }
+
+  .display {
+    height: 40px;
+    font-size: 2rem;
+  }
+
+  .button {
+    height: 45px;
+  }
+
+  .quote-container h1 {
+    text-align: center;
+  }
+
+  .quote {
+    margin: 50px;
+  }
+}
