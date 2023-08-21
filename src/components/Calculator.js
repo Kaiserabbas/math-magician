@@ -26,7 +26,6 @@ const Calculator = () => {
   return (
     <div className="calculator-container">
       <div className="calculator-text">
-        <h1>Math Magicians</h1>
         <h2>Let&apos;s do some math</h2>
       </div>
       <div className="calculator">
