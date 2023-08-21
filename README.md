@@ -114,7 +114,7 @@ To run the project:
 
 ### Deployment
 
-Deployment Coming soon. 
+[Math Magicians Link](https://kaiserabbas.github.io/math-magician/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
