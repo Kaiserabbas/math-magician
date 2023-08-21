@@ -42,7 +42,6 @@ const QuoteDisplay = () => {
 
   return (
     <div className="quote-container">
-      <h1 className="quote-text">Math Magician</h1>
       <blockquote className="quote">{quote}</blockquote>
     </div>
   );
