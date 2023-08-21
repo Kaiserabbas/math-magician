@@ -41,7 +41,7 @@ const QuoteDisplay = () => {
   }
 
   return (
-    <div>
+    <div className="quote-container">
       <blockquote className="quote">{quote}</blockquote>
     </div>
   );
