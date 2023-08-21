@@ -1,7 +1,6 @@
 const Home = () => {
   return (
     <div className="home">
-      <h1>Math Magician</h1>
       <h2>Welcome to our page</h2>
       <p>
         We&apos;re glad you&apos;re here. We hope you find our calculator and
