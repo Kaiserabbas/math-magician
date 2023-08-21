@@ -48,6 +48,10 @@
   margin-left: 5%;
 }
 
+.home h2 {
+  font-size: 2.3rem;
+}
+
 /* Home Page */
 
 /* Calculator */
@@ -57,16 +61,12 @@
 }
 
 .calculator-text {
-  margin: 0 0 0 30px;
+  margin-left: 5%;
   font-family: poppins, sans-serif;
 }
 
-.calculator-text h1 {
-  font-size: 3rem;
-}
-
 .calculator-text h2 {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
 }
 
 .calculator {
@@ -137,10 +137,9 @@
 
 /* Quote */
 
-.quote-container h1 {
-  margin: 30px 0 0 30px;
+.quote-container {
+  margin: 100px 0 0 0;
   font-family: poppins, sans-serif;
-  font-size: 3rem;
 }
 
 .quote {
@@ -148,7 +147,7 @@
   position: relative;
   width: auto;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin: 50px 150px;
 }
