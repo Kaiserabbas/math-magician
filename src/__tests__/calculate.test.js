@@ -1,4 +1,3 @@
-// calculate.test.js
 import calculate from '../logic/calculate';
 
 describe('calculate function', () => {
