@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Calculator from './components/Calculator.js';
 import QuoteDisplay from './components/QuoteDisplay.js';
 import Home from './components/Home.js';
@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <nav className="nav-list">
+        <h1 className="title">Math Magician</h1>
         <Link className="nav" to="/">
           Home
         </Link>
