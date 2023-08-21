@@ -1,17 +1,25 @@
 /* Nav-Bar */
+
 .nav-list {
   background-color: whitesmoke;
   display: flex;
+  align-items: center;
   justify-content: right;
   list-style: none;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 50px 20px 0;
   font-family: poppins, sans-serif;
   font-size: 20px;
   color: black;
-  margin: 40px 100px 0 0;
+  margin: 40px 0 0 0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  position: absolute;
+  left: 5%;
+  font-size: 3rem;
 }
 
 .nav {
@@ -37,10 +45,7 @@
 .home {
   margin: 30px;
   font-family: poppins, sans-serif;
-}
-
-.home h1 {
-  font-size: 3rem;
+  margin-left: 5%;
 }
 
 /* Home Page */
@@ -151,11 +156,16 @@
 /* Quote */
 
 @media screen and (max-width: 768px) {
+  .title {
+    position: relative;
+  }
+
   .home {
     text-align: center;
   }
 
   .nav-list {
+    flex-direction: column;
     justify-content: center;
     margin: 40px 0 0 0;
   }
