@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculate function handles +/- operation correctly 1`] = `
+Object {
+  "next": "-5",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate function handles = operation correctly 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "15",
+}
+`;
+
+exports[`calculate function handles consecutive number inputs correctly 1`] = `
+Object {
+  "next": "52",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate function handles consecutive operations correctly 1`] = `
+Object {
+  "next": null,
+  "operation": "/",
+  "total": "15",
+}
+`;
+
+exports[`calculate function handles decimal point input correctly 1`] = `
+Object {
+  "next": "5.",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate function handles number input correctly 1`] = `
+Object {
+  "next": "51",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate function handles operation after +/- correctly 1`] = `
+Object {
+  "next": "-5",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate function handles operation after = correctly 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "15",
+}
+`;
+
+exports[`calculate function handles operation after number input correctly 1`] = `
+Object {
+  "next": null,
+  "operation": "-",
+  "total": "15",
+}
+`;
+
+exports[`calculate function resets calculator data on AC button 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": null,
+}
+`;

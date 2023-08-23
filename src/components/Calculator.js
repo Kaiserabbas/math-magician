@@ -29,7 +29,7 @@ const Calculator = () => {
         <h2>Let&apos;s do some math</h2>
       </div>
       <div className="calculator">
-        <div className="display">
+        <div className="display" data-testid="display">
           {calculatorData.next !== null
             ? calculatorData.next
             : calculatorData.total || '0'}

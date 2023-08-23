@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator component matches the snapshot 1`] = `
+<div>
+  <div
+    class="calculator-container"
+  >
+    <div
+      class="calculator-text"
+    >
+      <h2>
+        Let's do some math
+      </h2>
+    </div>
+    <div
+      class="calculator"
+    >
+      <div
+        class="display"
+        data-testid="display"
+      />
+      <div
+        class="buttons"
+      >
+        <div
+          class="row1 row"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            +/-
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            %
+          </button>
+          <button
+            class=" button operator"
+            type="button"
+          >
+            ÷
+          </button>
+        </div>
+        <div
+          class="row2 row"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            7
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            8
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            9
+          </button>
+          <button
+            class="button operator"
+            type="button"
+          >
+            x
+          </button>
+        </div>
+        <div
+          class="row3 row"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            4
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            5
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            6
+          </button>
+          <button
+            class="button operator"
+            type="button"
+          >
+            -
+          </button>
+        </div>
+        <div
+          class="row4 row"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            1
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            2
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            3
+          </button>
+          <button
+            class="button operator"
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="row5 row"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            0
+          </button>
+          <button
+            class="button"
+            type="button"
+          >
+            .
+          </button>
+          <button
+            class="button operator"
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

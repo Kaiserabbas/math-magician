@@ -87,6 +87,18 @@ export default function calculate(obj, buttonName) {
     return {};
   }
 
+  if (buttonName === '%') {
+    if (obj.next) {
+      const percentage = operate(obj.next, '0.01', 'x');
+      return { ...obj, next: percentage };
+    }
+    if (obj.total) {
+      const percentage = operate(obj.total, '0.01', 'x');
+      return { ...obj, next: percentage };
+    }
+    return {};
+  }
+
   // Button must be an operation
 
   // When the user presses an operation button without having entered
