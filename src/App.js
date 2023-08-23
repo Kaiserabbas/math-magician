@@ -10,13 +10,21 @@ function App() {
     <>
       <nav className="nav-list">
         <h1 className="title">Math Magician</h1>
-        <Link className="nav" to="/">
+        <Link className="nav" to="/" data-testid="home-component">
           Home
         </Link>
-        <Link className="nav" to="/calculator">
+        <Link
+          className="nav"
+          to="/calculator"
+          data-testid="calculator-component"
+        >
           Calculator
         </Link>
-        <Link className="nav" to="/quotes">
+        <Link
+          className="nav"
+          to="/quotes"
+          data-testid="quote-display-component"
+        >
           Quotes
         </Link>
       </nav>

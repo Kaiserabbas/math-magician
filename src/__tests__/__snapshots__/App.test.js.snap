@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders navigation links correctly 1`] = `
+<a
+  class="nav"
+  data-testid="home-component"
+  href="/"
+>
+  Home
+</a>
+`;
+
+exports[`App component renders navigation links correctly 2`] = `
+<a
+  class="nav"
+  data-testid="calculator-component"
+  href="/calculator"
+>
+  Calculator
+</a>
+`;
+
+exports[`App component renders navigation links correctly 3`] = `
+<a
+  class="nav"
+  data-testid="quote-display-component"
+  href="/quotes"
+>
+  Quotes
+</a>
+`;
