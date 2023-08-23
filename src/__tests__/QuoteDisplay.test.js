@@ -28,14 +28,28 @@ describe('QuoteDisplay component', () => {
     const mockQuote = 'Mock quote content';
 
     // Mock the fetch function to return the mock data
+<<<<<<< HEAD
     global.fetch = jest.fn(() => Promise.resolve({
       json: () => Promise.resolve([{ quote: mockQuote }]),
     }));
+=======
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        json: () => Promise.resolve([{ quote: mockQuote }]),
+      })
+    );
+>>>>>>> tests
 
     render(<QuoteDisplay />);
 
     // Wait for the quote to be fetched and displayed
+<<<<<<< HEAD
     await waitFor(() => expect(screen.getByText(mockQuote)).toBeInTheDocument());
+=======
+    await waitFor(() =>
+      expect(screen.getByText(mockQuote)).toBeInTheDocument()
+    );
+>>>>>>> tests
 
     // Ensure the fetch function was called with the correct URL and headers
     expect(fetch).toHaveBeenCalledWith(
@@ -55,8 +69,16 @@ describe('QuoteDisplay component', () => {
     render(<QuoteDisplay />);
 
     // Wait for the error message to be displayed
+<<<<<<< HEAD
     await waitFor(() => expect(
       screen.getByText('Error: An error occurred while fetching the quote.')
     ).toBeInTheDocument());
+=======
+    await waitFor(() =>
+      expect(
+        screen.getByText('Error: An error occurred while fetching the quote.')
+      ).toBeInTheDocument()
+    );
+>>>>>>> tests
   });
 });
